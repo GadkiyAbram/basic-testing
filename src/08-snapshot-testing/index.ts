@@ -15,3 +15,5 @@ export const generateLinkedList = <T>(elements: T[]): LinkedListNode<T> => {
     next: generateLinkedList(rest),
   };
 };
+
+console.log(generateLinkedList([2, 2, 2, 2]));
