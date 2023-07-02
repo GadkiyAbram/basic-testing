@@ -30,9 +30,4 @@ describe('simpleCalculator', () => {
       expect(result).toBe(expected);
     },
   );
-  // This test case is just to run this test suite, remove it when you write your own tests
-  // test('should blah-blah', () => {
-  //   expect(true).toBe(true);
-  // });
-  // Consider to use Jest table tests API to test all cases above
 });

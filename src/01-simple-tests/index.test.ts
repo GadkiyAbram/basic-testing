@@ -35,48 +35,41 @@ describe('simpleCalculator tests', () => {
     const result = simpleCalculator(dataToAdd.data);
 
     expect(result).toBe(dataToAdd.resultExpect);
-    // Write your test here
   });
 
   test('should subtract two numbers', () => {
     const result = simpleCalculator(dataToSubtract.data);
 
     expect(result).toBe(dataToSubtract.resultExpect);
-    // Write your test here
   });
 
   test('should multiply two numbers', () => {
     const result = simpleCalculator(dataToMultiply.data);
 
     expect(result).toBe(dataToMultiply.resultExpect);
-    // Write your test here
   });
 
   test('should divide two numbers', () => {
     const result = simpleCalculator(dataToDivide.data);
 
     expect(result).toBe(dataToDivide.resultExpect);
-    // Write your test here
   });
 
   test('should exponentiate two numbers', () => {
     const result = simpleCalculator(dataToExponentiate.data);
 
     expect(result).toBe(dataToExponentiate.resultExpect);
-    // Write your test here
   });
 
   test('should return null for invalid action', () => {
     const result = simpleCalculator(invalidAction.data);
 
     expect(result).toBe(invalidAction.resultExpect);
-    // Write your test here
   });
 
   test('should return null for invalid arguments', () => {
     const result = simpleCalculator(invalidData.data);
 
     expect(result).toBe(invalidData.resultExpect);
-    // Write your test here
   });
 });

@@ -18,9 +18,7 @@ describe('throttledGetDataFromApi', () => {
 
     jest.useFakeTimers();
     jest.runAllTimers();
-    // await throttledGetDataFromApi('/api/users');
 
-    // expect(mockedAxiosCreate).toHaveBeenLastCalledWith({ baseURL: BASE_URL });
     expect(mockedAxiosCreate).toHaveBeenCalledTimes(0);
   });
 
@@ -33,7 +31,6 @@ describe('throttledGetDataFromApi', () => {
 
     await throttledGetDataFromApi('/api/users');
     expect(mockedAxiosGet).toHaveBeenCalledTimes(1);
-    // Write your test here
   });
 
   test('should return response data', async () => {
@@ -44,6 +41,5 @@ describe('throttledGetDataFromApi', () => {
 
     const result = await throttledGetDataFromApi('/api/users');
     expect(result).toBe('result');
-    // Write your test here
   });
 });

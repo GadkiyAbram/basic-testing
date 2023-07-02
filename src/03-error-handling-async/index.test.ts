@@ -13,7 +13,6 @@ describe('resolveValue', () => {
     const result = resolveValue(value);
 
     await expect(result).resolves.toBe(value);
-    // Write your test here
   });
 });
 
@@ -24,25 +23,20 @@ describe('throwError', () => {
     expect(() => {
       throwError(errorMsg);
     }).toThrowError(errorMsg);
-    // Write your test here
   });
 
   test('should throw error with default message if message is not provided', () => {
     expect(() => {
       throwError();
     }).toThrowError('Oops!');
-    // Write your test here
   });
 });
 
 describe('throwCustomError', () => {
   test('should throw custom error', () => {
-    // const result = throwCustomError();
-
     expect(() => {
       throwCustomError();
     }).toThrow(MyAwesomeError);
-    // Write your test here
   });
 });
 
@@ -51,6 +45,5 @@ describe('rejectCustomError', () => {
     const result = rejectCustomError();
 
     await expect(result).rejects.toThrow(MyAwesomeError);
-    // Write your test here
   });
 });

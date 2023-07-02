@@ -22,13 +22,11 @@ describe('partial mocking', () => {
     expect(mockOne).not.toBeCalled();
     expect(mockTwo).not.toBeCalled();
     expect(mockThree).not.toBeCalled();
-    // Write your test here
   });
 
   test('unmockedFunction should log into console', () => {
     const spyOnLog = jest.spyOn(console, 'log');
     unmockedFunction();
     expect(spyOnLog).toBeCalled();
-    // Write your test here
   });
 });
